@@ -1,0 +1,42 @@
+{
+  "name": "voice-commander",
+  "displayName": "Voice Commander",
+  "description": "Local voice transcription for coding",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "voice-commander.startRecording",
+        "title": "Start Voice Recording"
+      },
+      {
+        "command": "voice-commander.stopRecording",
+        "title": "Stop Voice Recording"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "voice-commander.startRecording",
+        "key": "f8"
+      },
+      {
+        "command": "voice-commander.stopRecording",
+        "key": "f9"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.0"
+  }
+} 
