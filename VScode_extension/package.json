@@ -3,12 +3,14 @@
   "displayName": "Voice Commander",
   "description": "Local voice transcription for coding",
   "version": "1.0.0",
+  "publisher": "masihmoafi",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": ["Other"],
   "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./src/extension.js",
+  "repository": "https://github.com/MasihMoafi/Voice-commander",
   "contributes": {
     "commands": [
       {
@@ -30,13 +32,5 @@
         "key": "f9"
       }
     ]
-  },
-  "scripts": {
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.74.0",
-    "typescript": "^4.9.0"
   }
 } 
