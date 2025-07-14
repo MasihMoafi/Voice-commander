@@ -1,6 +1,10 @@
 whisper.cpp/models/*.bin
 whisper.cpp/models/*.ggml
+whisper.cpp/whisper-cli
 *.bin
 *.ggml
 __pycache__/
-*.pyc 
+*.pyc
+*.exe
+*.so
+*.dylib 
