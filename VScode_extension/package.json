@@ -32,5 +32,15 @@
         "key": "f9"
       }
     ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish:patch": "vsce publish patch",
+    "publish:minor": "vsce publish minor",
+    "publish:major": "vsce publish major"
+  },
+  "devDependencies": {
+    "vsce": "^3.19.0",
+    "ovsx": "^0.4.0"
   }
 } 
